@@ -41,11 +41,14 @@ This plot shows the percentage of booked nights for each respective neighbourhoo
 ![Areas_percentage_of_booked_nights](https://user-images.githubusercontent.com/43189719/196300269-de35da4d-21e8-4ad5-8dcd-d9c61d293bd8.png)
 With an average price of 140$/night the 89 Airbnbs in the area Cascase are booked 42% of the time.
 With an average of 110$/night the 11 Airbnbs in the area Interbay are booked only 15% of the time.
+The plot below shows the Airbnb price distributions for each Cleansed Are Group (sorted like the above plot with percentage occupancy).
+![Area_prices_boxplot](https://user-images.githubusercontent.com/43189719/196302308-6f3e4f39-4f0b-4a1e-90e0-76c60275bced.png)
+
 
 ## Time variations
 The plot below shows the prices for available Airbnb listings averaged over weekdays and during the year. 
 ![prices_overview](https://user-images.githubusercontent.com/43189719/196295782-064afa23-1aaa-41b7-a566-7f4c80ab2b45.png)
-The prices are higher on average for the weekends, and the summer holiday months are the most expensive. The cheapest season is during the spring.
+The prices are higher on average for the weekends, and the summer holiday months are the most expensive. The cheapest time to go is during winter/spring (especially around January).
 
 ## Linear Modelling
 To identify features that are correlated with the Airbnb price, this shows a subset of the numerical features in this project:
@@ -56,10 +59,14 @@ The resulting CV=5 averaged model Airbnb price predition is 0.55:
 
 The important averaged features for the linear model are
 ![feature_weights](https://user-images.githubusercontent.com/43189719/196295575-72a1166e-d575-48fc-a7b8-4358ff124512.png)
-, note that the categorical NaN features (weight~0) contributes barely anything to the model performance. Future work can consider removing these features as they do not seem to change the model.
+Among the most important features contributing positively to higher Airbnb prices are the areas Queen Anne, Cascade and Magnolia together with the feature accommodates (how many people the Airbnb accommodates).
+The features contributing negatively to a price prediction are Shared room (if yes, the room could be shared with someone else) and the areas Northgate and Delridge.
+The categorical NaN features (weight~0 in the above plot) contributes barely anything to the model performance. Future work can consider removing these features as they do not seem to change the model.
 
-## Linear Modelling
-- The Airbnbs in the South Lake Union has the highest fraction of booked Airbnb nights of all. 
+## Conclusion
+- The Airbnbs areas in the Cascase and Capitol Hills hves the highest fraction of booked Airbnb nights of all while Interbay and Northbay have the lowest.
+- Airbnb prices are highest on Fridays and Saturdays. The cheapest season during the year is early in the year. If you want a cheaper trip, go during the weekdays in January.
+- The Airbnb prices are most importantly determined by the neighbourhood, how many people it accommodates and whether the room is shared.
 
 
 ## Contributing Members
