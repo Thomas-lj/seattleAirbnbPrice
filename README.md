@@ -36,15 +36,16 @@ After removing NaN entries, there are 3171 rows.
 - cancellation_policy
 - require_guest_phone_verification
 
-## Neighbourhood expenses
+## Neighbourhood popularity
 This plot shows the percentage of booked nights for each respective neighbourhood:
-![Areas_percentage_of_booked_nights](https://user-images.githubusercontent.com/43189719/196295379-22e8a999-49fc-4cda-bf00-679d02f5c14a.png)
-
+![Areas_percentage_of_booked_nights](https://user-images.githubusercontent.com/43189719/196300269-de35da4d-21e8-4ad5-8dcd-d9c61d293bd8.png)
+With an average price of 140$/night the 89 Airbnbs in the area Cascase are booked 42% of the time.
+With an average of 110$/night the 11 Airbnbs in the area Interbay are booked only 15% of the time.
 
 ## Time variations
-This plot shows the prices for available Airbnb listings averaged over weekdays and during the year. Notice how the prices are higher for the weekends, and how there seems to be a trend with more expensive houses during the school summer holidays.
+The plot below shows the prices for available Airbnb listings averaged over weekdays and during the year. 
 ![prices_overview](https://user-images.githubusercontent.com/43189719/196295782-064afa23-1aaa-41b7-a566-7f4c80ab2b45.png)
-
+The prices are higher on average for the weekends, and the summer holiday months are the most expensive. The cheapest season is during the spring.
 
 ## Linear Modelling
 To identify features that are correlated with the Airbnb price, this shows a subset of the numerical features in this project:
@@ -56,6 +57,10 @@ The resulting CV=5 averaged model Airbnb price predition is 0.55:
 The important averaged features for the linear model are
 ![feature_weights](https://user-images.githubusercontent.com/43189719/196295575-72a1166e-d575-48fc-a7b8-4358ff124512.png)
 , note that the categorical NaN features (weight~0) contributes barely anything to the model performance. Future work can consider removing these features as they do not seem to change the model.
+
+## Linear Modelling
+- The Airbnbs in the South Lake Union has the highest fraction of booked Airbnb nights of all. 
+
 
 ## Contributing Members
 This work is contributed by the author, Thomas.
