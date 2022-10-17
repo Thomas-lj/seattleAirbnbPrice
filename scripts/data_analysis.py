@@ -1,39 +1,31 @@
-import seaborn as sns
+import time
+import datetime
 import pandas as pd
-import os
-import matplotlib.pyplot as plt
-df = pd.read_csv(os.path.abspath("../data/listings.csv"))
 
-# remove $ , and .00 from price col. cast to int.
-df['price'] = df.price.astype(str).apply(lambda x: x.replace('$', '').replace('.00', '').replace(',', '')).astype(int)
-# host_response_rate num 0-100 %, remove %
-df['host_response_rate'] = df.host_response_rate.astype(str).apply(lambda x: x.replace('%', ''))
+def prepare_data(df, vars, cat_cols):
+    """
+    input
+    df: DataFrame (input data)
+    vars: list (numerical columns)
+    cat_cols: list (categorical columns)
+    """
+    cols = vars  + cat_cols
+    X = df.loc[:, df.columns.isin(cols)].copy()
 
-date_cols = [
-    'host_since',
-]
+    X = X.dropna(axis=0, subset=vars)
+    # make date feature representing number of days as a host.
+    if 'host_since' in cols:
+        X['days_as_host'] = X.host_since.astype(str).apply(lambda x: time.mktime(datetime.datetime.strptime(x, "%m/%d/%Y").timetuple()))
+        X = X.drop('host_since', axis=1)
 
-vars = [
-    'price',
-    'host_total_listings_count', # ok
-    'latitude', # ok
-    'longitude', # ok
-    'accommodates', # ok
-    'guests_included', # ok
-    'number_of_reviews', # ok
-    'review_scores_rating', # ok
-    'reviews_per_month' # ok
-]
+    # Compute cat cols as new columns for each variable.
+    for col in cat_cols:
+        try:
+            # for each cat add dummy var, drop original column, and compute dummy variables.
+            X = pd.concat([X.drop(col, axis=1), pd.get_dummies(X[col], prefix=col, prefix_sep='_', drop_first=True, dummy_na=True)], axis=1)
+        except:
+            continue
+    return X
 
-# 'host_response_rate', # turn into categorigal value?
-
-
-
-cat_col = [
-    'host_response_time',
-    'host_is_superhost',
-    'host_neighbourhood',
-]   
-
-corr = df[vars].corr()
-corr.style.background_gradient(cmap='coolwarm').set_precision(2)
+if __name__ == '__main__':
+    pass
