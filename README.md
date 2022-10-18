@@ -47,7 +47,7 @@ The plot below shows the Airbnb price distributions for each Cleansed Are Group 
 
 ## Time variations
 The plot below shows the prices for available Airbnb listings averaged over weekdays and during the year. 
-![prices_overview](https://user-images.githubusercontent.com/43189719/196295782-064afa23-1aaa-41b7-a566-7f4c80ab2b45.png)
+![prices_overview](https://user-images.githubusercontent.com/43189719/196331770-f64b59a8-5b2e-456f-b5dc-5a38a36655dc.png)
 The prices are higher on average for the weekends, and the summer holiday months are the most expensive. The cheapest time to go is during winter/spring (especially around January).
 
 ## Linear Modelling
