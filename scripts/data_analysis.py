@@ -8,6 +8,8 @@ def prepare_data(df, vars, cat_cols):
     df: DataFrame (input data)
     vars: list (numerical columns)
     cat_cols: list (categorical columns)
+
+    Returns: filtered DataFrame with one-hot categorical encodings.
     """
     cols = vars  + cat_cols
     X = df.loc[:, df.columns.isin(cols)].copy()
