@@ -1,5 +1,5 @@
-## Seattle Airbnb prices
-### Objective
+# Airbnb data analysis
+## Business Understanding
 The purpose of this project is to  analyze the Airbnb Seattle dataset. The following project questions are investigated:
 - Which neighbourhood is the hottest?
 - What is the cheapest time to go travel?
@@ -13,12 +13,12 @@ The purpose of this project is to  analyze the Airbnb Seattle dataset. The follo
 4. Execute the main.ipynb Jupyter Notebook for data analysis and plots.
 5. Check out my [Medium blog post](https://medium.com/@thomasleichtjensen/seattle-airbnb-prices-overview-7d8a402bbe87)
 
-## Data Description
+## Data Understanding
 This project uses 2 datasets collected in the time period 2016-2017:
 - listings.csv: main metadata file for 3818 Airbnb listings.
 - calendar.csv: 1048575 rows of detailed temporal data for the price and availability for each Airbnb.
 
-## Data processing
+## Data Preparation
 From the listings.csv dataset, rows are removed if there is missing data in the following numerical columns:
 - host_total_listings_count
 - accommodates
@@ -53,7 +53,7 @@ The plot below shows the prices for available Airbnb listings averaged over week
 
 The prices are higher on average for the weekends, and the summer holiday months are the most expensive. The cheapest time to go is during winter/spring (especially around January).
 
-## Linear Modelling
+## Data modelling
 To identify features that are correlated with the Airbnb price, this shows a subset of the numerical features in this project:
 ![sns_heatmap](https://user-images.githubusercontent.com/43189719/196295209-117cab3d-fe35-464f-b485-ce9b6a856a11.png)
 
