@@ -11,7 +11,7 @@ The purpose of this project is to  analyze the Airbnb Seattle dataset. The follo
 2. Raw Data is being kept [here](data folder) within this repo.
 3. Data processing/transformation script is being kept [here](scripts folder)
 4. Execute the main.ipynb Jupyter Notebook for data analysis and plots.
-5. Check out my [Medium blog post](https://medium.com/@thomasleichtjensen/seattle-airbnb-prices-overview-7d8a402bbe87))
+5. Check out my [Medium blog post](https://medium.com/@thomasleichtjensen/seattle-airbnb-prices-overview-7d8a402bbe87)
 
 ## Data Description
 This project uses 2 datasets collected in the time period 2016-2017:
