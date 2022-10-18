@@ -27,7 +27,8 @@ From the listings.csv dataset, rows are removed if there is missing data in the 
 - reviews_per_month
 - host_since
 
-After removing NaN entries, there are 3171 rows.
+After removing NaN entries, there are 3171 rows. NaN entries are removed using .dropna on the subset of numerical columns. This discards 647 rows and leaves a total of 3171 rows to model. The rows were removed instead of trying to impute values to avoid inducing model bias from missing data modelling. Note that future work could consider imputing values to save data, and then investigate how it affects the price predictions.
+
 - host_response_time
 - host_is_superhost
 - neighbourhood_group_cleansed
