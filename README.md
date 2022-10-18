@@ -47,7 +47,8 @@ The plot below shows the Airbnb price distributions for each Cleansed Are Group 
 
 ## Time variations
 The plot below shows the prices for available Airbnb listings averaged over weekdays and during the year. 
-![prices_overview](https://user-images.githubusercontent.com/43189719/196295782-064afa23-1aaa-41b7-a566-7f4c80ab2b45.png)
+![prices_overview](https://user-images.githubusercontent.com/43189719/196335334-68a7501a-a34a-4787-8c9c-0202c2e3bd8a.png)
+
 The prices are higher on average for the weekends, and the summer holiday months are the most expensive. The cheapest time to go is during winter/spring (especially around January).
 
 ## Linear Modelling
@@ -64,7 +65,7 @@ The features contributing negatively to a price prediction are Shared room (if y
 The categorical NaN features (weight~0 in the above plot) contributes barely anything to the model performance. Future work can consider removing these features as they do not seem to change the model.
 
 ## Conclusion
-- The Airbnbs areas in the Cascase and Capitol Hills hves the highest fraction of booked Airbnb nights of all while Interbay and Northbay have the lowest.
+- The Airbnbs areas in the Cascase and Capitol Hills have the highest fraction of booked Airbnb nights of all while Interbay and Northbay have the lowest.
 - Airbnb prices are highest on Fridays and Saturdays. The cheapest season during the year is early in the year. If you want a cheaper trip, go during the weekdays in January.
 - The Airbnb prices are most importantly determined by the neighbourhood, how many people it accommodates and whether the room is shared.
 
