@@ -64,7 +64,7 @@ The features contributing negatively to a price prediction are Shared room (if y
 The categorical NaN features (weight~0 in the above plot) contributes barely anything to the model performance. Future work can consider removing these features as they do not seem to change the model.
 
 ## Conclusion
-- The Airbnbs areas in the Cascase and Capitol Hills hves the highest fraction of booked Airbnb nights of all while Interbay and Northbay have the lowest.
+- The Airbnbs areas in the Cascase and Capitol Hills have the highest fraction of booked Airbnb nights of all while Interbay and Northbay have the lowest.
 - Airbnb prices are highest on Fridays and Saturdays. The cheapest season during the year is early in the year. If you want a cheaper trip, go during the weekdays in January.
 - The Airbnb prices are most importantly determined by the neighbourhood, how many people it accommodates and whether the room is shared.
 
