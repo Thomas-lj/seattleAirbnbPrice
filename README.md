@@ -71,7 +71,7 @@ The categorical NaN features (weight~0 in the above plot) contributes barely any
 ## Contributing Members
 This work is contributed by the author, Thomas.
 
-|Name     |  email   | 
+|Name     |  email   | |Medium     |
 |---------|-----------------|
-|[Thomas git](https://github.com/[Thomas-lj])| thomasleichtjensen@gmail.com        |
-Check out my [Medium blog post](https://medium.com/@thomasleichtjensen/seattle-airbnb-prices-overview-7d8a402bbe87) on this topic. Thanks for reading!
+|[Thomas git](https://github.com/[Thomas-lj])| thomasleichtjensen@gmail.com        | Check out my [Medium blog post](https://medium.com/@thomasleichtjensen/seattle-airbnb-prices-overview-7d8a402bbe87) on this topic        |
+Thanks for reading!
