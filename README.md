@@ -1,17 +1,13 @@
 # Airbnb data analysis
-## Business Understanding
-The purpose of this project is to  analyze the Airbnb Seattle dataset. The following project questions are investigated:
-- Which neighbourhood is the hottest?
-- What is the cheapest time to go travel?
-- What features contribute to a higher/lower rental price?
+##Section 1: Business Understanding
+The purpose of this project is to analyze the Airbnb Seattle dataset
+What should a guest on a tight budget consider when trying to book the next Airbnb accommodation for a night?
+And as an Airbnb host, which area is considered a popular one when renting out your place?
 
-## Getting Started
-
-1. Clone this repo (for help see this [tutorial](https://help.github.com/articles/cloning-a-repository/)).
-2. Raw Data is being kept [here](data folder) within this repo.
-3. Data processing/transformation script is being kept [here](scripts folder)
-4. Execute the main.ipynb Jupyter Notebook for data analysis and plots.
-5. Check out my [Medium blog post](https://medium.com/@thomasleichtjensen/seattle-airbnb-prices-overview-7d8a402bbe87)
+This notebook seeks to investigate the following business quesions:
+1) How do the prices differ from area to area in Airbnb listings?
+2) Is there a cheapest time to go travel?
+3) What is the most important contributor to a listing price?
 
 ## Data Understanding
 This project uses 2 datasets collected in the time period 2016-2017:
@@ -38,7 +34,7 @@ After removing NaN entries, there are 3171 rows. NaN entries are removed using .
 - cancellation_policy
 - require_guest_phone_verification
 
-## Neighbourhood popularity
+## Question 1: How do the prices differ from area to area in Airbnb listings?
 This plot shows the percentage of booked nights for each respective neighbourhood:
 ![Areas_percentage_of_booked_nights](https://user-images.githubusercontent.com/43189719/196300269-de35da4d-21e8-4ad5-8dcd-d9c61d293bd8.png)
 With an average price of 140$/night the 89 Airbnbs in the area Cascase are booked 42% of the time.
@@ -47,13 +43,13 @@ The plot below shows the Airbnb price distributions for each Cleansed Are Group 
 ![Area_prices_boxplot](https://user-images.githubusercontent.com/43189719/196302308-6f3e4f39-4f0b-4a1e-90e0-76c60275bced.png)
 
 
-## Time variations
+## Question 2: Is there a cheapest time to go travel?
 The plot below shows the prices for available Airbnb listings averaged over weekdays and during the year. 
 ![prices_overview](https://user-images.githubusercontent.com/43189719/196335334-68a7501a-a34a-4787-8c9c-0202c2e3bd8a.png)
 
 The prices are higher on average for the weekends, and the summer holiday months are the most expensive. The cheapest time to go is during winter/spring (especially around January).
 
-## Data modelling
+## Question 3: What is the most important contributor to a listing price?
 To identify features that are correlated with the Airbnb price, this shows a subset of the numerical features in this project:
 ![sns_heatmap](https://user-images.githubusercontent.com/43189719/196295209-117cab3d-fe35-464f-b485-ce9b6a856a11.png)
 
@@ -78,4 +74,4 @@ This work is contributed by the author, Thomas.
 |Name     |  email   | 
 |---------|-----------------|
 |[Thomas git](https://github.com/[Thomas-lj])| thomasleichtjensen@gmail.com        |
-
+Check out my [Medium blog post](https://medium.com/@thomasleichtjensen/seattle-airbnb-prices-overview-7d8a402bbe87) on this topic. Thanks for reading!
