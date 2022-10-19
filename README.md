@@ -1,5 +1,5 @@
 # Airbnb data analysis
-## Section 1: Business Understanding
+Section 1: Business Understanding
 The purpose of this project is to analyze the Airbnb Seattle dataset
 What should a guest on a tight budget consider when trying to book the next Airbnb accommodation for a night?
 And as an Airbnb host, which area is considered a popular one when renting out your place?
